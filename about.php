@@ -37,16 +37,13 @@ $about_info = array(
   );
 ?>
 <?php foreach($about_info as $about) {?>
-  
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <img src="<?php echo $about['img'];?>" alt="<?php echo $about['img_alt'];?>" style="width: 100%">
-        <h3><?php echo $about['name'];?></h3>
-        <p class="w3-opacity"><?php echo $about['title'];?></p>
-        <p><?php echo $about['desc'];?>.</p>
-        <p><a class="w3-button w3-light-grey w3-block" >Контактирај</a></p>
-      </div>
-   
-   
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <img src="<?php echo $about['img'];?>" alt="<?php echo $about['img_alt'];?>" style="width: 100%">
+    <h3><?php echo $about['name'];?></h3>
+    <p class="w3-opacity"><?php echo $about['title'];?></p>
+    <p><?php echo $about['desc'];?>.</p>
+    <p><a class="w3-button w3-light-grey w3-block" >Контактирај</a></p>
+  </div>
 <?php } ?>
 </div>       
      
