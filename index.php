@@ -1,5 +1,5 @@
 <?php
-  $route = !isset($_GET['route']) ? $_GET['route'] : 'home';
+  $route = empty($_GET['route']) ? $_GET['route'] : 'home';
 
 
 ?>
@@ -35,7 +35,7 @@
   if($route == "home"){
    include ("./home.php");
   } elseif($route == "login"){
-     include("./login.php");
+    include("./login.php");
    } elseif($route == "about"){
     include("./about.php");
    }
